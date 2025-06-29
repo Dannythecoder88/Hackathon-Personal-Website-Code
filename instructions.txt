@@ -6,3 +6,7 @@ git clone <repository-url>
 
 To run the nextjs app, run the following command:
 npm run dev
+
+
+To change directories, run the following command:
+cd <directory-name>
