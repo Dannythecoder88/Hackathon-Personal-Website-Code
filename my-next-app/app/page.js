@@ -8,23 +8,25 @@ export default function Home() {
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Hi, I'm <span className="text-blue-400">Daniel</span>
+            Hi, I'm <span className="bg-gradient-to-t from-blue-500 to-pink-500 bg-clip-text text-transparent">Daniel</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8">
             Web Developer & Creative Thinker
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Link 
               href="/about" 
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+              className="relative overflow-hidden group bg-gradient-to-r from-blue-600 to-pink-500 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              Learn More About Me
+              <span className="relative z-10">Learn More About Me</span>
+              <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </Link>
             <Link 
               href="/contact" 
-              className="border-2 border-gray-300 hover:border-blue-600 text-gray-700 hover:text-blue-600 font-semibold py-3 px-6 rounded-lg transition-colors"
+              className="relative overflow-hidden group border-2 border-transparent bg-gradient-to-r from-blue-600 to-pink-500 bg-clip-padding hover:from-pink-500 hover:to-blue-500 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              Get In Touch
+              <span className="relative z-10">Get In Touch</span>
+              <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </Link>
           </div>
         </div>
@@ -58,9 +60,10 @@ export default function Home() {
         </p>
         <Link 
           href="/contact" 
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg inline-block transition-colors shadow-md hover:shadow-lg"
+          className="relative overflow-hidden group bg-gradient-to-r from-blue-500 to-pink-500 text-white font-semibold py-3 px-8 rounded-lg inline-block transition-all shadow-md hover:shadow-lg hover:opacity-90"
         >
-          Get In Touch
+          <span className="relative z-10">Get In Touch</span>
+          <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
         </Link>
       </section>
     </div>
