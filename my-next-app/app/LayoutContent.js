@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function LayoutContent({ children }) {
   return (
-    <div className={`${inter.className} flex flex-col min-h-0 bg-white dark:bg-gray-800 text-gray-900 dark:text-white`}>
+    <div className={`${inter.className} flex flex-col min-h-0 bg-black text-white`}>
       <Providers>
-        <header className="bg-white dark:bg-gray-800 shadow-md">
+        <header className="bg-black shadow-md">
           <nav className="container mx-auto px-4 py-2">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-xl font-bold bg-gradient-to-t from-blue-500 to-pink-500 bg-clip-text text-transparent">MyPortfolio</Link>
@@ -31,7 +31,7 @@ export default function LayoutContent({ children }) {
         <main className="flex-1">
           {children}
         </main>
-        <footer className="bg-gray-800 text-white py-1">
+        <footer className="bg-black text-white py-1 border-t border-gray-800">
           <div className="container mx-auto px-4 text-center">
             <p className="text-xs">© {new Date().getFullYear()} My Portfolio</p>
           </div>

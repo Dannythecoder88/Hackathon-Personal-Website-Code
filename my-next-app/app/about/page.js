@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
+    <div className="max-w-4xl mx-auto px-6 py-16 bg-black min-h-screen">
       <h1 className="text-4xl font-bold bg-gradient-to-t from-blue-500 to-pink-500 bg-clip-text text-transparent mb-8">
         About Me
       </h1>
@@ -18,7 +18,7 @@ export default function About() {
           <h2 className="text-2xl font-semibold bg-gradient-to-t from-blue-500 to-pink-500 bg-clip-text text-transparent mb-4">
             Hello, I'm Daniel
           </h2>
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-300 mb-6 leading-relaxed">
             I'm a passionate web developer with expertise in creating beautiful, functional, and user-friendly websites. 
             With a strong foundation in modern web technologies, I love turning complex problems into simple, beautiful, 
             and intuitive solutions.
@@ -27,7 +27,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div>
               <h3 className="font-semibold bg-gradient-to-t from-blue-500 to-pink-500 bg-clip-text text-transparent mb-2">Name:</h3>
-              <p className="text-gray-600">Daniel Joseph</p>
+              <p className="text-gray-300">Daniel Joseph</p>
             </div>
             <div>
               <h3 className="font-semibold bg-gradient-to-t from-blue-500 to-pink-500 bg-clip-text text-transparent mb-2">Email:</h3>
@@ -35,11 +35,11 @@ export default function About() {
             </div>
             <div>
               <h3 className="font-semibold bg-gradient-to-t from-blue-500 to-pink-500 bg-clip-text text-transparent mb-2">Location:</h3>
-              <p className="text-gray-600">New York, USA</p>
+              <p className="text-gray-300">New York, USA</p>
             </div>
             <div>
               <h3 className="font-semibold bg-gradient-to-t from-blue-500 to-pink-500 bg-clip-text text-transparent mb-2">Availability:</h3>
-              <p className="text-gray-600">Open to opportunities</p>
+              <p className="text-gray-300">Open to opportunities</p>
             </div>
           </div>
           
@@ -64,7 +64,7 @@ export default function About() {
           ].map((skill) => (
             <div 
               key={skill} 
-              className="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow font-bold text-black"
+              className="bg-gray-900 p-4 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow font-bold text-white border border-gray-800"
             >
               {skill}
             </div>
@@ -77,12 +77,12 @@ export default function About() {
           Education & Experience
         </h2>
         <div className="space-y-8">
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800">
             <h3 className="text-xl font-semibold bg-gradient-to-t from-blue-500 to-pink-500 bg-clip-text text-transparent">
               Student Programmer
             </h3>
-            <p className="text-gray-600">High School Student | 2023 - Present</p>
-            <p className="mt-2 text-gray-700">
+            <p className="text-gray-300">High School Student | 2023 - Present</p>
+            <p className="mt-2 text-gray-300">
               I am a student at Guilderland High School with a strong passion for coding and web development. 
               I enjoy creating interactive and responsive websites and am constantly learning new technologies 
               to enhance my skills in programming and software development.
