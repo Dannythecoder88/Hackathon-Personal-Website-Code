@@ -1,0 +1,8 @@
+to create nextjs app, run the following command:
+npx create-next-app@latest my-next-app
+
+To clone a github repository, run the following command:
+git clone <repository-url>
+
+To run the nextjs app, run the following command:
+npm run dev
